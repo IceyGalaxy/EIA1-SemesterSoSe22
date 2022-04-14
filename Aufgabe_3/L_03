@@ -7,6 +7,14 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <header> 
+    <nav>
+        <ul>
+            <li><a href=""></a></li>
+            <li> <a href=""></a> </li>
+            <li><a href=""></a></li>
+        </ul>
+    </nav>
     <img src="../Aufgabe_3/IoannaGkaroumpas_VisuelleKommunikation.jpg">
     <video src="../Aufgabe_3/IoannaGkaroumpas_Videoporträt.mp4" controls></video>
 </body>
