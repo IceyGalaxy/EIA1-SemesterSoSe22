@@ -1,8 +1,11 @@
 
+header {
+    background-image: url("../Aufgabe_2/foto1_big.jpg");
+    padding: 200px;
+}
 body {
-    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
 }
 footer {
     background-color: rgb(201, 201, 189);
-    
 }
