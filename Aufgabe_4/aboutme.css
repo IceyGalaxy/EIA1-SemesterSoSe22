@@ -1,0 +1,41 @@
+header {
+    background-image: url("../Aufgabe_2/foto1_big.jpg");
+    padding: 200px;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    }
+li a {
+    display: inline;
+    width: 60px;
+    color: gray;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+} 
+li a:hover {
+    color: aliceblue;
+    text-decoration: underline;
+  }
+li a:visited {
+    color: aliceblue;
+    text-decoration: underline;
+}
+footer {
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+}
