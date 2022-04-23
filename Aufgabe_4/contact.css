@@ -5,8 +5,23 @@ header {
     background-repeat: no-repeat;
     background-color: black;
 }
+main {
+    
+}
 footer {
     background-color: #eaeaea;
     display: flex;
     justify-content: center;
+}
+.com1 {
+    padding: 30px;
+}
+.com2 {
+    padding: 30px;
+}
+.com3 {
+    padding: 30px;
+}
+input[type=text] {
+    background-color: gray;
 }
