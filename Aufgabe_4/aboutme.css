@@ -39,3 +39,16 @@ footer {
     display: flex;
     justify-content: center;
 }
+.com1 {
+    padding: 30px;
+}
+.com2 {
+    padding: 30px;
+}
+.com3 {
+    padding: 30px;
+}
+#text {
+    width: 800px;
+    margin: auto;
+}
