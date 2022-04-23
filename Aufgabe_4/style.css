@@ -17,7 +17,7 @@ ul {
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #bee7fa;
+    background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     position: fixed;
     top: 0px;
@@ -33,8 +33,13 @@ li a {
     text-decoration: none;
 } 
 li a:hover {
-    background-color: #111;
+    color: aliceblue;
+    text-decoration: underline;
   }
+li a:visited {
+    color: aliceblue;
+    text-decoration: underline;
+}
 footer {
     background-color: #eaeaea;
 }
@@ -45,7 +50,4 @@ footer {
 #links li {
     display: inline;
     float: right;
-}
-.active {
-    text-decoration: dotted;
 }
