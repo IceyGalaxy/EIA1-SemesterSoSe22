@@ -8,20 +8,20 @@ body {
 }
 .active {
     background-color: #04AA6D;
-    color: rgb(48, 58, 192); 
+    color: rgb(74, 202, 192); 
 }
 ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 200px;
-        background-color: #f1f1f1;
-        font-family: Arial, Helvetica, sans-serif;
-        position: fixed;
-        top: 0px;
-        width: 80%;
-        text-align: center;
-      }
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 0px;
+    width: 80%;
+    text-align: center;
+    }
 li {
     float: right;
 }
@@ -29,13 +29,13 @@ li a {
     display: inline;
     width: 60px;
     color: rgb(231, 49, 140);
-  text-align: center;
-  padding: 10px;
-  text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
 } 
 li a:hover {
     background-color: #111;
   }
 footer {
-    background-color: rgb(201, 201, 189);
+    background-color: #eaeaea;
 }
