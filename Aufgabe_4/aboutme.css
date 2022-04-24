@@ -52,3 +52,7 @@ footer {
     width: 800px;
     margin: auto;
 }
+#links li {
+    display: inline;
+    float: right;
+}
