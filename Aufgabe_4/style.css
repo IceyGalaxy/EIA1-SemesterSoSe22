@@ -5,6 +5,9 @@ header {
     background-repeat: no-repeat;
     background-color: black;
 }
+nav {
+    margin-right: 300px;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -56,4 +59,7 @@ footer {
 }
 .com3 {
     padding: 30px;
+}
+.logo {
+    margin-left: 300px;
 }
