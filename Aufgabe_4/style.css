@@ -4,6 +4,7 @@ header {
     padding: 200px;
     background-repeat: no-repeat;
     background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 nav {
     margin-right: 300px;
@@ -42,6 +43,7 @@ footer {
     background-color: #eaeaea;
     display: flex;
     justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #images {
     width: 800px;
