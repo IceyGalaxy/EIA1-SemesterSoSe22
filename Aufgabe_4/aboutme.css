@@ -74,3 +74,18 @@ footer {
 .com2 img:hover {
     opacity: 1.0;
 }
+#banner {
+    position: fixed;
+    padding: 10px 120px;
+    background-color: aquamarine;
+    top: 30px;
+    right: -120px;
+    transform: rotate(45deg);
+    z-index: 99999;
+}
+#banner .inhalt {
+    position: relative;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+}
