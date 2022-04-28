@@ -8,8 +8,8 @@ header {
 nav {
     margin-right: 300px;
 }
-body {
-    font-family: Arial, Helvetica, sans-serif;
+main {
+    font-family: 'Dancing Script', cursive;
 }
 .center {
     display: block;
@@ -54,6 +54,9 @@ footer {
 .com1 {
     padding: 30px;
 }
+.com2:hover {
+    color: blueviolet;
+}
 .com2 {
     padding: 30px;
 }
@@ -62,4 +65,12 @@ footer {
 }
 .logo {
     margin-left: 300px;
+}
+h1 {
+    margin-left: 365px;
+    margin-bottom: -6px;
+}
+h2 {
+    margin-left: 365px;
+    margin-bottom: -5px;
 }
