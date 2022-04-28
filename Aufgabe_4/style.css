@@ -1,4 +1,7 @@
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 header {
     background-image: url("../Aufgabe_2/foto1_big.jpg");
     padding: 200px;
