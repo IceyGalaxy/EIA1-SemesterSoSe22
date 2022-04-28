@@ -10,7 +10,7 @@ header {
     animation-iteration-count: infinite;
 }
 @keyframes anima {
-    50% {background-image: url("image3A856_Glitch.jpg");}
+    50% {background-image: url("image3A856_Glitch.jpg"); background-position: 50% 50%; }
 }
 nav {
     margin-right: 300px;
@@ -85,4 +85,7 @@ h2 {
 }
 .com2 img:hover {
     opacity: 1.0;
+}
+.eye:hover {
+    transform: scale(1.5);
 }
