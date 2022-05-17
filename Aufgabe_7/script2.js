@@ -26,16 +26,19 @@ var EU2008 = 734000000;
 var EU2022 = 751000000;
 let resEU03 = (EU2022 - FRA2008) / EU2008 * 100.0;
 let resEU04 = (EU2022 - EU2008);
+let resEU02 = EU2022 - EU2008;
 console.log("Die Wachstumsrate seit 2008 in Europa beträgt " + resEU03.toFixed + "%");
 let resGER01 = (DE2022 / EU2022) * 100.0;
 let resFRA01 = (FRA2022 / EU2022) * 100.0;
 let resESP01 = (ESP2022 / EU2022) * 100.0;
 let resITA01 = (ITA2022 / EU2022) * 100.0;
+let resEU01 = (EU2022 / EU2022) * 100.0;
 window.addEventListener("load", function () {
     document.querySelector(".germany").addEventListener("click", function () { ger(DE2022, DE2008, resDE04, resDE03, resGER01); });
     document.querySelector(".france").addEventListener("click", function () { fra(FRA2022, FRA2008, resFRA04, resFRA03, resFRA01); });
     document.querySelector(".spain").addEventListener("click", function () { esp(ESP2022, ESP2008, resESP04, resESP03, resESP01); });
     document.querySelector(".italy").addEventListener("click", function () { ita(ITA2022, ITA2008, resITA04, resITA03, resITA01); });
+    document.querySelector(".stars").addEventListener("click", function () { Europa(EU2022, EU2008, resEU04, resEU02, resEU01); });
     function ger(DE2022, DE2008, resDE04, resDE03, resGER01) {
         document.querySelector(".a").innerHTML = DE2022;
         document.querySelector(".b").innerHTML = "Gesamtzahl Einwohnerinnen und Einwohner in Deutschland in 2022";
@@ -72,6 +75,14 @@ window.addEventListener("load", function () {
         document.querySelector(".chart").setAttribute('style', 'height:' + resITA01 + "%");
     }
     ;
+    function Europa(EU2022, EU2008, resEU04, resEU02, resEU01) {
+        document.querySelector(".a").innerHTML = EU2022;
+        document.querySelector(".b").innerHTML = "Gesamtzahl Einwohnerinnen und Einwohner in der EU in 2022";
+        document.querySelector(".c").innerHTML = resEU01 + "%";
+        document.querySelector(".d").innerHTML = resEU04 + "%";
+        document.querySelector(".e").innerHTML = resEU02;
+        document.querySelector(".chart").setAttribute('style', 'height:' + resEU01 + "%");
+    }
+    ;
 });
-document.querySelector(".chart").setAttribute('style', 'height:' + resGER01 + "%");
 //# sourceMappingURL=script2.js.map
