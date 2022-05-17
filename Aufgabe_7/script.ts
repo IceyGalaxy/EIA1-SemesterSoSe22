@@ -30,20 +30,14 @@ let resESP04=(ESP2022-ESP2008) / ESP2008 * 100.0;
 console.log("Die Einwohnerzahl in Spanien betrug 2008 ca. 45,98 Millionen und sie beträgt jetzt in etwa 47,36 Millionen.")
 console.log("Die Wachstumsrate seit 2008 in Spanien beträgt " + resESP04 + "%" );
 
-window.addEventListener('load', function () {
-    document.querySelector('.europe').addEventListener('click', function () { emissions(); });
-    document.querySelector('.northamerica').addEventListener('click', function () { emissions(continentNorthamerica, northamerica2018, northamerica2008); });
-    document.querySelector('.southamerica').addEventListener('click', function () { emissions(continentSouthamerica, southamerica2018, southamerica2008); });
-    document.querySelector('.africa').addEventListener('click', function () { emissions(continentAfrica, africa2018, africa2008); });
-    document.querySelector('.asia').addEventListener('click', function () { emissions(continentAsia, asia2018, asia2008); });
-    document.querySelector('.australia').addEventListener('click', function () { emissions(continentAustralia, australia2018, australia2008); });
-    function emissions(continent, continent2018, continent2008) {
-        document.querySelector("#Region").innerHTML = continent;
-        document.querySelector("#RegionUnten").innerHTML = continent;
-        document.querySelector("#Continent2018").innerHTML = continent2018.toString();
-        document.querySelector("#RelativZuWelt").innerHTML = Math.round(continent2018 / world2018 * 100 * 100) / 100 + "%";
-        document.querySelector("#Wachstumsrate").innerHTML = Math.round((continent2018 - continent2008) / continent2008 * 100 * 100) / 100 + "%";
-        document.querySelector("#WachstumsrateAbs").innerHTML = (Math.round((continent2018 - continent2008) * 100) / 100).toString();
-        document.querySelector(".chart").setAttribute("style", "height:" + (continent2018 / world2018) * 100 + "%");
-    }
-});
+var EU2008: number=734000000
+var EU2022: number=751000000
+
+let resEU03=(EU2022-FRA2008) / EU2008* 100.0;
+let resEU04=(EU2022-EU2008);
+
+console.log ("Die Wachstumsrate seit 2008 in Europa beträgt " +resEU03.toFixed + "%")
+
+function stars () {
+
+}
