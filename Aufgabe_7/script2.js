@@ -42,6 +42,7 @@ window.addEventListener("load", function () {
         document.querySelector(".c").innerHTML = resGER01 + "%";
         document.querySelector(".d").innerHTML = resDE04 + "%";
         document.querySelector(".e").innerHTML = resDE03;
+        document.querySelector(".chart").setAttribute('style', 'height:' + resGER01 + "%");
     }
     ;
     function fra(FRA2022, FRA2008, resFRA04, resFRA03, resFRA01) {
@@ -50,6 +51,7 @@ window.addEventListener("load", function () {
         document.querySelector(".c").innerHTML = resFRA01 + "%";
         document.querySelector(".d").innerHTML = resFRA04 + "%";
         document.querySelector(".e").innerHTML = resFRA03;
+        document.querySelector(".chart").setAttribute('style', 'height:' + resFRA01 + "%");
     }
     ;
     function esp(ESP2022, ESP2008, resESP04, resESP03, resESP01) {
@@ -58,6 +60,7 @@ window.addEventListener("load", function () {
         document.querySelector(".c").innerHTML = resESP01 + "%";
         document.querySelector(".d").innerHTML = resESP04 + "%";
         document.querySelector(".e").innerHTML = resESP03;
+        document.querySelector(".chart").setAttribute('style', 'height:' + resESP01 + "%");
     }
     ;
     function ita(ITA2022, ITA2008, resITA04, resITA03, resITA01) {
@@ -66,7 +69,9 @@ window.addEventListener("load", function () {
         document.querySelector(".c").innerHTML = resITA01 + "%";
         document.querySelector(".d").innerHTML = resITA04 + "%";
         document.querySelector(".e").innerHTML = resITA03;
+        document.querySelector(".chart").setAttribute('style', 'height:' + resITA01 + "%");
     }
     ;
 });
+document.querySelector(".chart").setAttribute('style', 'height:' + resGER01 + "%");
 //# sourceMappingURL=script2.js.map
