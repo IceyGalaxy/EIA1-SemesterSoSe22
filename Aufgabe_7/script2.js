@@ -31,11 +31,11 @@ let resGER01 = (DE2022 / EU2022) * 100.0;
 let resFRA01 = (FRA2022 / EU2022) * 100.0;
 let resESP01 = (ESP2022 / EU2022) * 100.0;
 let resITA01 = (ITA2022 / EU2022) * 100.0;
-window.addEventListener('load', function () {
-    document.querySelector(".germany").addEventListener('click', ger);
-    document.querySelector(".france").addEventListener('click', fra);
-    document.querySelector(".spain").addEventListener('click', esp);
-    document.querySelector(".italy").addEventListener('click', ita);
+window.addEventListener("load", function () {
+    document.querySelector(".germany").addEventListener("click", function () { ger(DE2022, DE2008, resDE04, resDE03, resGER01); });
+    document.querySelector(".france").addEventListener("click", function () { fra(FRA2022, FRA2008, resFRA04, resFRA03, resFRA01); });
+    document.querySelector(".spain").addEventListener("click", function () { esp(ESP2022, ESP2008, resESP04, resESP03, resESP01); });
+    document.querySelector(".italy").addEventListener("click", function () { ita(ITA2022, ITA2008, resITA04, resITA03, resITA01); });
     function ger(DE2022, DE2008, resDE04, resDE03, resGER01) {
         document.querySelector(".a").innerHTML = DE2022;
         document.querySelector(".b").innerHTML = "Gesamtzahl Einwohnerinnen und Einwohner in Deutschland in 2022";
