@@ -39,32 +39,32 @@ window.addEventListener("load", function () {
     function ger(DE2022, DE2008, resDE04, resDE03, resGER01) {
         document.querySelector(".a").innerHTML = DE2022;
         document.querySelector(".b").innerHTML = "Gesamtzahl Einwohnerinnen und Einwohner in Deutschland in 2022";
-        document.querySelector(".c").innerHTML = resGER01;
-        document.querySelector(".d").innerHTML = resDE04;
+        document.querySelector(".c").innerHTML = resGER01 + "%";
+        document.querySelector(".d").innerHTML = resDE04 + "%";
         document.querySelector(".e").innerHTML = resDE03;
     }
     ;
     function fra(FRA2022, FRA2008, resFRA04, resFRA03, resFRA01) {
         document.querySelector(".a").innerHTML = FRA2022;
         document.querySelector(".b").innerHTML = "Gesamtzahl Einwohnerinnen und Einwohner in Frankreich in 2022";
-        document.querySelector(".c").innerHTML = resFRA01;
-        document.querySelector(".d").innerHTML = resFRA04;
+        document.querySelector(".c").innerHTML = resFRA01 + "%";
+        document.querySelector(".d").innerHTML = resFRA04 + "%";
         document.querySelector(".e").innerHTML = resFRA03;
     }
     ;
     function esp(ESP2022, ESP2008, resESP04, resESP03, resESP01) {
         document.querySelector(".a").innerHTML = ESP2022;
         document.querySelector(".b").innerHTML = "Gesamtzahl Einwohnerinnen und Einwohner in Spanien in 2022";
-        document.querySelector(".c").innerHTML = resESP01;
-        document.querySelector(".d").innerHTML = resESP04;
+        document.querySelector(".c").innerHTML = resESP01 + "%";
+        document.querySelector(".d").innerHTML = resESP04 + "%";
         document.querySelector(".e").innerHTML = resESP03;
     }
     ;
     function ita(ITA2022, ITA2008, resITA04, resITA03, resITA01) {
         document.querySelector(".a").innerHTML = ITA2022;
         document.querySelector(".b").innerHTML = "Gesamtzahl Einwohnerinnen und Einwohner in Italien in 2022";
-        document.querySelector(".c").innerHTML = resITA01;
-        document.querySelector(".d").innerHTML = resITA04;
+        document.querySelector(".c").innerHTML = resITA01 + "%";
+        document.querySelector(".d").innerHTML = resITA04 + "%";
         document.querySelector(".e").innerHTML = resITA03;
     }
     ;
