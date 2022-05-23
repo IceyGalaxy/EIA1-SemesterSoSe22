@@ -1,74 +1,126 @@
-html, body {
+body {
     background-color: #000000;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    height: 100%; 
+    align-items: row;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    font-family: 'Oswald', sans-serif;
-  }
-  
-  h1 {
-    color: #fff;
-    font-size: 5vw;
-    letter-spacing: 6px;
-  }
-  
-  .pad {
-    width: 500px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .box {
-    width: 100px;
-    height: 100px;
-    margin: 10px 0;
-    box-shadow: 0 8px 6px -6px black;
-    background-color: #444;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.4);
-    user-select: none;
-    
-    &:hover {
-      background-color: lighten(#444, 10%);
-      cursor: pointer;
     }
-    
-    &:active {
-      background-color: darken(#444, 10%);
-      transform: scale(1.1);
-      transition: all .2s;
-    }
-  }
-  
-  .active {
-    background-color: darken(#444, 10%);
-    transform: scale(1.1);
-    transition: all .2s;
-  }
-  
-  .pad-1, .pad-2, .pad-3 { 
-    border: 2px solid #2ecc71; 
-  }
-  
-  .pad-4, .pad-5, .pad-6 { 
-    border: 2px solid #E5446D; 
-  }
-  
-  .pad-7, .pad-8, .pad-9 { 
-    border: 2px solid #1abc9c; 
-  }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+    #drumbox_flex {
+       width: 500px;
+       height: 650px;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 50px;
+    }
+    #cont{
+        margin: auto;
+        display: flex;
+    }
+    #drumbutton{
+        width: 150px;
+        height: 150px;
+        border-radius: 10%;
+        margin: 10px;
+        box-shadow: 
+        inset 0 -3em 3em rgba(0,0,0,0.25),
+        0.3em 0.3em 1em rgba(0,0,0,0.3);
+    }
+    #drumbutton:hover{
+        cursor: pointer; 
+    }
+    .play {
+        opacity: 90%;
+        font-size: 100px;
+        height: 150px;
+        width: 150px;
+        margin-left: 60px;
+        margin-right: auto; 
+        color: white;
+    }
+    .play:hover{
+        cursor:pointer;
+        opacity: 100%;
+    }
+  
+    .play{
+        display: block;
+        opacity: 90%;
+        font-size: 100px;
+        height: 150px;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        display: none;
+    }
+    .play:hover{
+        cursor:pointer;
+        opacity: 100%;
+    }
+    
+    
+
+    .drum1{
+    
+        background-color: #33ccff;
+    }
+    .drum1:hover{
+        background-color: #b3ecff;
+    }
+    .drum2{
+    
+        background-color: #33ccff;
+    }
+    .drum2:hover{
+        background-color: #b3ecff;
+    }
+    .drum3{
+    
+        background-color: #33ccff;
+    }
+    .drum3:hover{
+        background-color: #b3ecff;
+    }
+    .drum4{
+    
+        background-color: #ff66cc;
+    }
+    .drum4:hover{
+        background-color: #ffccee;
+    }
+    .drum5{
+    
+        background-color:#ff66cc;
+    }
+    .drum5:hover{
+        background-color: #ffccee;
+    }
+    .drum6{
+    
+        background-color:#ff66cc;
+    }
+    .drum6:hover{
+        background-color: #ffccee;
+    }
+    .drum7{
+    
+        background-color:#ff66cc;
+    }
+    .drum7:hover{
+        background-color: #ffccee;
+    }
+    /*orange drum Flächen*/
+    .drum8{
+    
+        background-color:#ff884d;
+    }
+    .drum8:hover{
+        background-color: #ffccb3;
+    }
+    .drum9{
+    
+        background-color:#ff884d;
+    }
+    .drum9:hover{
+        background-color: #ffccb3;
+    }
