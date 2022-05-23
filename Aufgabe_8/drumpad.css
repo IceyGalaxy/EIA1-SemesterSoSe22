@@ -28,20 +28,7 @@ body {
     #drumbutton:hover{
         cursor: pointer; 
     }
-    .play {
-        opacity: 90%;
-        font-size: 100px;
-        height: 150px;
-        width: 150px;
-        margin-left: 60px;
-        margin-right: auto; 
-        color: white;
-    }
-    .play:hover{
-        cursor:pointer;
-        opacity: 100%;
-    }
-  
+     
     .play{
         display: block;
         opacity: 90%;
@@ -51,7 +38,6 @@ body {
         margin-left: auto;
         margin-right: auto;
         color: white;
-        display: none;
     }
     .play:hover{
         cursor:pointer;
