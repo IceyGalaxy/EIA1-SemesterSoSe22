@@ -25,9 +25,6 @@ body {
         inset 0 -3em 3em rgba(0,0,0,0.25),
         0.3em 0.3em 1em rgba(0,0,0,0.2);
     }
-    #drumbutton:hover{
-        cursor: pointer; 
-    }
      
     .play{
         display: block;
@@ -40,7 +37,6 @@ body {
         color: white;
     }
     .play:hover{
-        cursor:pointer;
         opacity: 100%;
     }
 
