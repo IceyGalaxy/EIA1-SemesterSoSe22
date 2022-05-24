@@ -35,8 +35,8 @@ drum6.addEventListener("click", function () { sounds[5].play(); });
 drum7.addEventListener("click", function () { sounds[6].play(); });
 drum8.addEventListener("click", function () { sounds[7].play(); });
 drum9.addEventListener("click", function () { sounds[8].play(); });
-function playSample(beats) {
-    var sound = new Audio(beats);
+function playSample() {
+    var sound = new Audio();
     sound.play();
 }
 document.querySelector(".play").addEventListener('click', function () { playSample(""); });
