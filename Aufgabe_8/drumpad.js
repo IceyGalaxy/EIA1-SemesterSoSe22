@@ -9,8 +9,8 @@ const drum8 = document.querySelector('.drum8');
 const drum9 = document.querySelector('.drum9');
 const playstop = document.querySelector('.play');
 var playButtonStyle = document.getElementById("play");
-var interval = setInterval(function () {
-}, 2000);
+setInterval(function () {
+}, 500);
 let sounds = [];
 sounds[0] = new Audio("L08_task_material_assets_DrumPad_A.mp3");
 sounds[1] = new Audio("L08_task_material_assets_DrumPad_C.mp3");
