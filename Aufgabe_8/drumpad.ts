@@ -12,7 +12,7 @@ const drum9 = document.querySelector('.drum9');
 const play = document.querySelector('.play');
  
 let sounds:HTMLAudioElement[] = [];
-sounds[0] = new Audio('assets/Drumpad_A.mp3');
+sounds[0] = new Audio('assets/DrumPad_A.mp3');
 sounds[1] = new Audio('assets/DrumPad_C.mp3');
 sounds[2] = new Audio('assets/DrumPad_F.mp3');
 sounds[3] = new Audio('assets/DrumPad_G.mp3');
