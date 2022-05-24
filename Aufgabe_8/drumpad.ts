@@ -9,12 +9,7 @@ const drum7 = document.querySelector('.drum7');
 const drum8 = document.querySelector('.drum8');
 const drum9 = document.querySelector('.drum9');
 
-const playstop = document.querySelector('.play');
-var playButtonStyle = document.getElementById("play");
-
-setInterval(function() {
-
- }, 500);
+const play = document.querySelector('.play');
  
 let sounds:HTMLAudioElement[] = [];
 sounds[0] = new Audio('assets/Drumpad_A.mp3');
@@ -45,4 +40,9 @@ document.querySelector(".drum6").addEventListener("click", function () { playSam
 document.querySelector(".drum7").addEventListener("click", function () { playSample(sounds[6]) });
 document.querySelector(".drum8").addEventListener("click", function () { playSample(sounds[7]) });
 document.querySelector(".drum9").addEventListener("click", function () { playSample(sounds[8]) });
+document.querySelector(".play").addEventListener("click", function(){ setInterval(function beats() {
+    beatfolge[0].play();
+    beatfolge[1].play();
+    beatfolge[2].play();
+     }, 500);});
 })
