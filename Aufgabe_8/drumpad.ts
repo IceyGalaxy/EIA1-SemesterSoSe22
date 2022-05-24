@@ -33,7 +33,6 @@ beatfolge[1] = sounds[8];
 beatfolge[2] = sounds[4];
 
 function playSample(sound:HTMLAudioElement){     
-
     sound.play();
 }
 window.addEventListener("load", function(){
