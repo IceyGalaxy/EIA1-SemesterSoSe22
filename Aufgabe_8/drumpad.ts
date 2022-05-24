@@ -32,20 +32,10 @@ beatfolge[0] = sounds[5];
 beatfolge[1] = sounds[8];
 beatfolge[2] = sounds[4];
 
-var i: number;
+function playSample(sound:HTMLAudioElement){     
 
-drum1.addEventListener("click", function () { sounds[0].play() });
-drum2.addEventListener("click", function () { sounds[1].play() });
-drum3.addEventListener("click", function () { sounds[2].play() });
-drum4.addEventListener("click", function () { sounds[3].play() });
-drum5.addEventListener("click", function () { sounds[4].play() });
-drum6.addEventListener("click", function () { sounds[5].play() });
-drum7.addEventListener("click", function () { sounds[6].play() });
-drum8.addEventListener("click", function () { sounds[7].play() });
-drum9.addEventListener("click", function () { sounds[8].play() });
-
-function playSample(){     
-    var sound: HTMLAudioElement = new Audio();
     sound.play();
 }
-document.querySelector(".play").addEventListener('click', function(){playSample("")});
+window.addEventListener("load", function(){
+document.querySelector(".drum1").addEventListener("click", function () { playSample(sounds[0]) });
+})
