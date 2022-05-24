@@ -44,5 +44,5 @@ document.querySelector(".play").addEventListener("click", function(){ setInterva
     beatfolge[0].play();
     beatfolge[1].play();
     beatfolge[2].play();
-     }, 500);});
+     }, 750);});
 })

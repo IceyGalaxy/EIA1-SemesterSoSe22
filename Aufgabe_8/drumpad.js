@@ -40,7 +40,7 @@ window.addEventListener("load", function () {
             beatfolge[0].play();
             beatfolge[1].play();
             beatfolge[2].play();
-        }, 500);
+        }, 750);
     });
 });
 //# sourceMappingURL=drumpad.js.map
