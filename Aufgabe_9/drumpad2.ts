@@ -8,8 +8,6 @@ const drum6 = document.querySelector('.drum6');
 const drum7 = document.querySelector('.drum7');
 const drum8 = document.querySelector('.drum8');
 const drum9 = document.querySelector('.drum9');
-
-const play = document.querySelector('.play');
  
 let sounds:HTMLAudioElement[] = [];
 sounds[0] = new Audio('assets/DrumPad_A.mp3');
