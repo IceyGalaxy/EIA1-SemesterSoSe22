@@ -45,25 +45,8 @@ window.addEventListener("load", function () {
 const playstop = document.querySelector('.playstop');
 var playButtonStyle = document.getElementById("playbutton");
 var stopButtonStyle = document.getElementById("stopbutton");
-const playRandom = document.querySelector('.randombutton');
 playstop.addEventListener("click", beat);
 playstop.addEventListener("click", changebutton);
-playRandom.addEventListener("click", random);
-function beat() {
-    if (stopButtonStyle.style.display == "block") {
-        clearInterval(interval);
-    }
-    if (playButtonStyle.style.display == "block") {
-        setTimeout(function () { beatfolge[0].play(); }, 500);
-        setTimeout(function () { beatfolge[1].play(); }, 1000);
-        setTimeout(function () { beatfolge[2].play(); }, 1500);
-        interval = setInterval(function () {
-            setTimeout(function () { beatfolge[0].play(); }, 500);
-            setTimeout(function () { beatfolge[1].play(); }, 1000);
-            setTimeout(function () { beatfolge[2].play(); }, 1500);
-        }, 2000);
-    }
-}
 function changebutton() {
     if (playButtonStyle.style.display == "none") {
         playButtonStyle.style.display = "block";
@@ -73,13 +56,5 @@ function changebutton() {
         playButtonStyle.style.display = "none";
         stopButtonStyle.style.display = "block";
     }
-}
-function random() {
-    var number1 = Math.floor(Math.random() * 8);
-    var number2 = Math.floor(Math.random() * 8);
-    var number3 = Math.floor(Math.random() * 8);
-    setTimeout(function () { sounds[number1].play(); }, 500);
-    setTimeout(function () { sounds[number2].play(); }, 1000);
-    setTimeout(function () { sounds[number3].play(); }, 1500);
 }
 //# sourceMappingURL=drumpad2.js.map

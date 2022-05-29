@@ -26,7 +26,7 @@ body {
         0.3em 0.3em 1em rgba(0,0,0,0.2);
     }
      
-    .play{
+    .playstop{
         display: block;
         opacity: 90%;
         font-size: 100px;
@@ -36,7 +36,21 @@ body {
         margin-right: auto;
         color: white;
     }
-    .play:hover{
+    .playstop:hover{
+        opacity: 100%;
+    }
+
+    .random {
+        opacity: 90%;
+        font-size: 100px;
+        height: 150px;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+    }
+    .random:hover{
+        cursor:pointer;
         opacity: 100%;
     }
 
