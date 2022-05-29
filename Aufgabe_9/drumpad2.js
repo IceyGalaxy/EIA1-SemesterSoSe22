@@ -34,7 +34,7 @@ window.addEventListener("load", function () {
     document.querySelector(".drum7").addEventListener("click", function () { playSample(sounds[6]); });
     document.querySelector(".drum8").addEventListener("click", function () { playSample(sounds[7]); });
     document.querySelector(".drum9").addEventListener("click", function () { playSample(sounds[8]); });
-    document.querySelector(".play").addEventListener("click", function () {
+    document.querySelector(".playstop").addEventListener("click", function () {
         setInterval(function beats() {
             beatfolge[0].play();
             beatfolge[1].play();
