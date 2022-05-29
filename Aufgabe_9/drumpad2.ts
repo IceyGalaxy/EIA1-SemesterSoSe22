@@ -53,7 +53,7 @@ const playstop = document.querySelector('.playstop');
 var playButtonStyle = document.getElementById("playbutton");
 var stopButtonStyle = document.getElementById("stopbutton");
 
-const playRandom = document.querySelector('.randombutton');
+const playRandom = document.querySelector('.random');
 
 playstop.addEventListener("click", beat);
 playstop.addEventListener("click", changebutton);
