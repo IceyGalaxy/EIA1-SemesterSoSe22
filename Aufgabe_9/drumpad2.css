@@ -1,0 +1,105 @@
+body {
+    background-color: #000000;
+    height: 100%; 
+    align-items: row;
+    justify-content: center;
+    }
+
+    #drumbox_flex {
+       width: 500px;
+       height: 500px;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 100px;
+    }
+    #cont{
+        margin: auto;
+        display: flex;
+    }
+    #drumbutton{
+        width: 150px;
+        height: 150px;
+        border-radius: 10%;
+        margin: 3px;
+        box-shadow:
+        inset 0 -3em 3em rgba(0,0,0,0.3),
+        0.3em 0.3em 1em rgba(0,0,0,0.2);
+    }
+     
+    .play{
+        display: block;
+        opacity: 90%;
+        font-size: 100px;
+        height: 150px;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+    }
+    .play:hover{
+        opacity: 100%;
+    }
+
+    .drum1{
+    
+        background-color: #33ccff;
+    }
+    .drum1:hover{
+        background-color: #b3ecff;
+    }
+    .drum2{
+    
+        background-color: #33ccff;
+    }
+    .drum2:hover{
+        background-color: #b3ecff;
+    }
+    .drum3{
+    
+        background-color: #33ccff;
+    }
+    .drum3:hover{
+        background-color: #b3ecff;
+    }
+    .drum4{
+    
+        background-color: #ff66cc;
+    }
+    .drum4:hover{
+        background-color: #ffccee;
+    }
+    .drum5{
+    
+        background-color:#ff66cc;
+    }
+    .drum5:hover{
+        background-color: #ffccee;
+    }
+    .drum6{
+    
+        background-color:#ff66cc;
+    }
+    .drum6:hover{
+        background-color: #ffccee;
+    }
+    .drum7{
+    
+        background-color:#ff66cc;
+    }
+    .drum7:hover{
+        background-color: #ffccee;
+    }
+    .drum8{
+    
+        background-color:#ff884d;
+    }
+    .drum8:hover{
+        background-color: #ffccb3;
+    }
+    .drum9{
+    
+        background-color:#ff884d;
+    }
+    .drum9:hover{
+        background-color: #ffccb3;
+    }
