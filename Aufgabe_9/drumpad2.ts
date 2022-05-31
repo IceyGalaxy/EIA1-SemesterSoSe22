@@ -63,8 +63,7 @@ function beat() {
     if (stopButtonStyle.style.display == "block") {
         clearInterval(interval);
     }
-
-
+    
     if (playButtonStyle.style.display == "block") {
 
         setTimeout(function () { beatfolge[0].playSample() }, 500); 
