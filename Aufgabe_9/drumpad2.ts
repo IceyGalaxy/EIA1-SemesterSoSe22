@@ -67,14 +67,14 @@ function beat() {
 
     if (playButtonStyle.style.display == "block") {
 
-        setTimeout(function () { beatfolge[0].play() }, 500); 
-        setTimeout(function () { beatfolge[1].play() }, 1000);
-        setTimeout(function () { beatfolge[2].play() }, 1500);
+        setTimeout(function () { beatfolge[0].playSample() }, 500); 
+        setTimeout(function () { beatfolge[1].playSample() }, 1000);
+        setTimeout(function () { beatfolge[2].playSample() }, 1500);
 
         interval = setInterval(function () {
-            setTimeout(function () { beatfolge[0].play() }, 500); 
-            setTimeout(function () { beatfolge[1].play() }, 1000);
-            setTimeout(function () { beatfolge[2].play() }, 1500);
+            setTimeout(function () { beatfolge[0].playSample() }, 500); 
+            setTimeout(function () { beatfolge[1].playSample() }, 1000);
+            setTimeout(function () { beatfolge[2].playSample() }, 1500);
         },2000)
 
     }}
