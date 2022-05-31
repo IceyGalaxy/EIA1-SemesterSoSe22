@@ -39,9 +39,9 @@ document.querySelector(".drum7").addEventListener("click", function () { playSam
 document.querySelector(".drum8").addEventListener("click", function () { playSample(sounds[7]) });
 document.querySelector(".drum9").addEventListener("click", function () { playSample(sounds[8]) });
 document.querySelector(".playstop").addEventListener("click", function(){ setInterval(function beats() {
-    beatfolge[0].play();
-    beatfolge[1].play();
-    beatfolge[2].play();
+    beatfolge[0].playSample();
+    beatfolge[1].playSample();
+    beatfolge[2].playSample();
      }, 750);});
 })
 
@@ -78,7 +78,7 @@ function beat() {
         },2000)
 
     }}
-
+   
 function changebutton() {
     if (playButtonStyle.style.display == "none") {
         playButtonStyle.style.display = "block";
@@ -95,8 +95,8 @@ function random() {
     var number1 = Math.floor(Math.random() * 8);
     var number2 = Math.floor(Math.random() * 8);
     var number3 = Math.floor(Math.random() * 8);
-    setTimeout(function () { sounds[1].playSample() }, 500); 
-    setTimeout(function () { sounds[2].playSample() }, 1000);
-    setTimeout(function () { sounds[3].playSample() }, 1500);
+    setTimeout(function () { sounds[1].play() }, 500); 
+    setTimeout(function () { sounds[2].play() }, 1000);
+    setTimeout(function () { sounds[3].play() }, 1500);
 
 }
