@@ -45,8 +45,8 @@ window.addEventListener("load", function () {
 var interval = setInterval(function () {
 }, 2000);
 const playstop = document.querySelector('.playstop');
-var playButtonStyle = document.getElementById("playbutton");
-var stopButtonStyle = document.getElementById("stopbutton");
+var playButtonStyle = document.getElementById(".playbutton");
+var stopButtonStyle = document.getElementById(".stopbutton");
 const playRandom = document.querySelector('.random');
 playstop.addEventListener("click", beat);
 function beat() {

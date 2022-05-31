@@ -50,8 +50,8 @@ var interval = setInterval(function () {
 }, 2000);
 
 const playstop = document.querySelector('.playstop');
-var playButtonStyle = document.getElementById("playbutton");
-var stopButtonStyle = document.getElementById("stopbutton");
+var playButtonStyle = document.getElementById(".playbutton");
+var stopButtonStyle = document.getElementById(".stopbutton");
 
 const playRandom = document.querySelector('.random');
 
@@ -78,12 +78,12 @@ function beat() {
     }}
    
     document.querySelector(".playbutton").addEventListener('click', function():void{
-        document.querySelector(".playbutton").classList.add(".hidden")
-        document.querySelector(".stopbutton").classList.remove(".hidden")
+        document.querySelector(".playbutton").classList.add(".hidden");
+        document.querySelector(".stopbutton").classList.remove(".hidden");
     })
     document.querySelector(".stopbutton").addEventListener('click', function():void{
-        document.querySelector(".stopbutton").classList.add(".hidden")
-        document.querySelector(".playbutton").classList.remove(".hidden")
+        document.querySelector(".stopbutton").classList.add(".hidden");
+        document.querySelector(".playbutton").classList.remove(".hidden");
     })
 
 function random() {
