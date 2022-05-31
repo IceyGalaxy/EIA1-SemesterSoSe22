@@ -36,9 +36,9 @@ window.addEventListener("load", function () {
     document.querySelector(".drum9").addEventListener("click", function () { playSample(sounds[8]); });
     document.querySelector(".playstop").addEventListener("click", function () {
         setInterval(function beats() {
-            beatfolge[0].playSample();
-            beatfolge[1].playSample();
-            beatfolge[2].playSample();
+            playSample(beatfolge[0]);
+            playSample(beatfolge[1]);
+            playSample(beatfolge[2]);
         }, 750);
     });
 });
@@ -55,18 +55,19 @@ function beat() {
         clearInterval(interval);
     }
     if (playButtonStyle.style.display == "block") {
-        setTimeout(function () { beatfolge[0].playSample(); }, 500);
-        setTimeout(function () { beatfolge[1].playSample(); }, 1000);
-        setTimeout(function () { beatfolge[2].playSample(); }, 1500);
+        setTimeout(function () { playSample(beatfolge[0]); }, 500);
+        setTimeout(function () { playSample(beatfolge[1]); }, 1000);
+        setTimeout(function () { playSample(beatfolge[2]); }, 1500);
         interval = setInterval(function () {
-            setTimeout(function () { beatfolge[0].playSample(); }, 500);
-            setTimeout(function () { beatfolge[1].playSample(); }, 1000);
-            setTimeout(function () { beatfolge[2].playSample(); }, 1500);
+            setTimeout(function () { playSample(beatfolge[0]); }, 500);
+            setTimeout(function () { playSample(beatfolge[1]); }, 1000);
+            setTimeout(function () { playSample(beatfolge[2]); }, 1500);
         }, 2000);
     }
 }
 function changebutton() {
-    if (playButtonStyle.style.display == "none") {
+    if (playstop) {
+        document.getElementById(".playbutton");
         playButtonStyle.style.display = "block";
         stopButtonStyle.style.display = "none";
     }
@@ -79,8 +80,8 @@ function random() {
     var number1 = Math.floor(Math.random() * 8);
     var number2 = Math.floor(Math.random() * 8);
     var number3 = Math.floor(Math.random() * 8);
-    setTimeout(function () { sounds[1].play(); }, 500);
-    setTimeout(function () { sounds[2].play(); }, 1000);
-    setTimeout(function () { sounds[3].play(); }, 1500);
+    setTimeout(function () { playSample(sounds[1]); }, 500);
+    setTimeout(function () { playSample(sounds[2]); }, 1000);
+    setTimeout(function () { playSample(sounds[3]); }, 1500);
 }
 //# sourceMappingURL=drumpad2.js.map
