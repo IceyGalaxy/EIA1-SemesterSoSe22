@@ -95,8 +95,8 @@ function random() {
     var number1 = Math.floor(Math.random() * 8);
     var number2 = Math.floor(Math.random() * 8);
     var number3 = Math.floor(Math.random() * 8);
-    setTimeout(function () { sounds[number1].play() }, 500); 
-    setTimeout(function () { sounds[number2].play() }, 1000);
-    setTimeout(function () { sounds[number3].play() }, 1500);
+    setTimeout(function () { sounds[1].playSample() }, 500); 
+    setTimeout(function () { sounds[2].playSample() }, 1000);
+    setTimeout(function () { sounds[3].playSample() }, 1500);
 
 }
