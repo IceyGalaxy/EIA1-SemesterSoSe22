@@ -25,11 +25,11 @@ body {
         inset 0 -3em 3em rgba(0,0,0,0.3),
         0.3em 0.3em 1em rgba(0,0,0,0.2);
     }
-    #playbutton{
+    .playbutton{
         display: block;
     }
-    #stopbutton{
-        display:none;
+    .hidden{
+        display: none !important;
     }
     .playstop{
         display: block;

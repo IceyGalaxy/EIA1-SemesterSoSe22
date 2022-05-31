@@ -49,7 +49,6 @@ var playButtonStyle = document.getElementById("playbutton");
 var stopButtonStyle = document.getElementById("stopbutton");
 const playRandom = document.querySelector('.random');
 playstop.addEventListener("click", beat);
-playstop.addEventListener("click", changebutton);
 function beat() {
     if (stopButtonStyle.style.display == "block") {
         clearInterval(interval);
@@ -65,17 +64,14 @@ function beat() {
         }, 2000);
     }
 }
-function changebutton() {
-    if (playstop) {
-        document.getElementById(".playbutton");
-        playButtonStyle.style.display = "block";
-        stopButtonStyle.style.display = "none";
-    }
-    else {
-        playButtonStyle.style.display = "none";
-        stopButtonStyle.style.display = "block";
-    }
-}
+document.querySelector(".playbutton").addEventListener('click', function () {
+    document.querySelector(".playbutton").classList.add(".hidden");
+    document.querySelector(".stopbutton").classList.remove(".hidden");
+});
+document.querySelector(".stopbutton").addEventListener('click', function () {
+    document.querySelector(".stopbutton").classList.add(".hidden");
+    document.querySelector(".playbutton").classList.remove(".hidden");
+});
 function random() {
     var number1 = Math.floor(Math.random() * 8);
     var number2 = Math.floor(Math.random() * 8);

@@ -56,7 +56,6 @@ var stopButtonStyle = document.getElementById("stopbutton");
 const playRandom = document.querySelector('.random');
 
 playstop.addEventListener("click", beat);
-playstop.addEventListener("click", changebutton);
 
 function beat() {
 
@@ -78,22 +77,14 @@ function beat() {
 
     }}
    
-    function changebutton()
-    {
-        if(playstop)
-        {
-            document.getElementById(".playbutton");
-            playButtonStyle.style.display = "block";
-            stopButtonStyle.style.display = "none";
-
-        }
-        else
-        {
-            playButtonStyle.style.display = "none";
-            stopButtonStyle.style.display = "block";
-    
-        }
-    }
+    document.querySelector(".playbutton").addEventListener('click', function():void{
+        document.querySelector(".playbutton").classList.add(".hidden")
+        document.querySelector(".stopbutton").classList.remove(".hidden")
+    })
+    document.querySelector(".stopbutton").addEventListener('click', function():void{
+        document.querySelector(".stopbutton").classList.add(".hidden")
+        document.querySelector(".playbutton").classList.remove(".hidden")
+    })
 
 function random() {
 
