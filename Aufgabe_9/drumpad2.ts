@@ -74,18 +74,19 @@ function beat() {
             setTimeout(function () { playSample(beatfolge[1]) }, 1000);
             setTimeout(function () { playSample(beatfolge[2]) }, 1500);
         },2000)
-
     }}
-   
-    document.querySelector(".playbutton").addEventListener('click', function():void{
-        document.querySelector(".playbutton").classList.add(".hidden");
-        document.querySelector(".stopbutton").classList.remove(".hidden");
-    })
-    document.querySelector(".stopbutton").addEventListener('click', function():void{
-        document.querySelector(".stopbutton").classList.add(".hidden");
-        document.querySelector(".playbutton").classList.remove(".hidden");
-    })
 
+    document.querySelector(".playbutton").addEventListener("click", function(): void{
+        document.querySelector(".playbutton").classList.add("hidden");
+        document.querySelector(".stopbutton").classList.remove("hidden");
+      });
+
+  document.querySelector(".stopbutton").addEventListener("click", function(): void{
+        document.querySelector(".stopbutton").classList.add("hidden");
+        document.querySelector(".playbutton").classList.remove("hidden");
+      });
+
+    
 function random() {
 
     var number1 = Math.floor(Math.random() * 8);

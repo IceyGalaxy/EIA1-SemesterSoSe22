@@ -64,13 +64,13 @@ function beat() {
         }, 2000);
     }
 }
-document.querySelector(".playbutton").addEventListener('click', function () {
-    document.querySelector(".playbutton").classList.add(".hidden");
-    document.querySelector(".stopbutton").classList.remove(".hidden");
+document.querySelector(".playbutton").addEventListener("click", function () {
+    document.querySelector(".playbutton").classList.add("hidden");
+    document.querySelector(".stopbutton").classList.remove("hidden");
 });
-document.querySelector(".stopbutton").addEventListener('click', function () {
-    document.querySelector(".stopbutton").classList.add(".hidden");
-    document.querySelector(".playbutton").classList.remove(".hidden");
+document.querySelector(".stopbutton").addEventListener("click", function () {
+    document.querySelector(".stopbutton").classList.add("hidden");
+    document.querySelector(".playbutton").classList.remove("hidden");
 });
 function random() {
     var number1 = Math.floor(Math.random() * 8);
