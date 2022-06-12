@@ -7,7 +7,7 @@ body {
 .title {
     position:sticky;
     text-align: center;
-    font-size: 150px;
+    font-size: 100px;
     font-family: Leaflets; 
 color: rgb(111, 241, 133);
 padding-left: 100px;
